@@ -1,9 +1,9 @@
 Package: succor
 Title: Common Solutions for Common Usecases
-Version: 0.0.9999
+Version: 0.1.0
 Authors@R: 
     person("Alexander", "Senetcky", , "alexander.senetcky@ct.gov", 
-           role = c("aut", "cre"),
+           role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0009-0009-3730-5397"))
 Description: A lightweight set of functions for commonly encountered usecases
 License: MIT + file LICENSE
