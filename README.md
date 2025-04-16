@@ -4,6 +4,8 @@
 # succor
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/asenetcky-r-pkgs/succor/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/asenetcky-r-pkgs/succor/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of succor is to …
@@ -81,7 +83,7 @@ make_datekey(Sys.Date())
 # Standardized timestamps
 # Always the same format, length and delimiters
 make_timestamp()
-#> [1] "2025-04-15 20:37:03.7726"
+#> [1] "2025-04-15 20:46:09.0419"
 
 # Mass rename dataframe column names to something more sensible
 # that you can pile on you own standards after
