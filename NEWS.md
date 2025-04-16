@@ -1,3 +1,9 @@
+# succor 0.7.0
+
+## Features
+
+- Added unit tests
+
 # succor 0.6.0
 
 ## Features
