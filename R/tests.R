@@ -58,7 +58,7 @@ skip_if_not_linux <- function() {
 #' skip_if_not_dph()
 #' }
 skip_if_linux <- function() {
-  testthat::skip_if_not(
+  testthat::skip_if(
     condition = is_linux(),
     message = "This test is not for linux."
   )
