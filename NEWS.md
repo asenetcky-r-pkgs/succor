@@ -1,3 +1,9 @@
+# succor 0.4.0
+
+## Features
+
+- Added string helpers
+
 # succor 0.3.0
 
 ## Features
