@@ -1,3 +1,9 @@
+# succor 0.3.0
+
+## Features
+
+- Added succor-package.R
+
 # succor 0.2.0
 
 ## Features
