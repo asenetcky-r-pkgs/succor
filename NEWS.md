@@ -1,3 +1,9 @@
+# succor 0.5.0
+
+## Features
+
+- Added test helpers
+
 # succor 0.4.0
 
 ## Features
