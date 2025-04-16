@@ -1,3 +1,10 @@
+# succor 0.8.0
+
+## Features
+
+- Added doco
+- Updated Readme
+
 # succor 0.7.0
 
 ## Features
