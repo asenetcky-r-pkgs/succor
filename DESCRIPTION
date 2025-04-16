@@ -2,7 +2,7 @@ Package: succor
 Title: Common Solutions for Common Usecases
 Version: 0.9.0
 Authors@R: 
-    person("Alexander", "Senetcky", , "alexander.senetcky@ct.gov", 
+    person("Alexander", "Senetcky", , "asenetcky@gmail.com", 
            role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0009-0009-3730-5397"))
 Description: A lightweight set of functions for commonly encountered usecases
