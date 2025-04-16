@@ -1,0 +1,108 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# succor
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of succor is to ...
+
+## Installation
+
+You can install the development version of succor from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("asenetcky-r-pkgs/succor")
+```
+
+## Data helpers
+
+```{r data-example}
+library(succor)
+library(purrr)
+suppressPackageStartupMessages(library(dplyr))
+
+# is it a dataframe, with data?
+is_dataframe_with_data(mtcars)
+
+is_dataframe_with_data(mtcars[0, ])
+
+# you can assert or throw errors as well
+assert_dataframe_with_data(mtcars)
+safe_assert <- purrr::safely(assert_dataframe_with_data)
+
+captured <- safe_assert(mtcars[0, ])
+captured$error$message
+```
+
+## Test and Environment Helpers
+
+```{r env-helpers}
+library(testthat)
+# is the current session on a linux machine?
+is_linux()
+
+# this is useful for unit testing
+testthat::test_that("test runs when on linux", {
+  skip_if_not_linux()
+  testthat::expect_true(TRUE)
+})
+
+```
+
+
+## Miscellaneous Helpers
+
+```{r misc-example}
+library(stringr)
+
+# make a datekey for dimension wrangling
+Sys.Date()
+
+make_datekey(Sys.Date())
+
+# Standardized timestamps
+# Always the same format, length and delimiters
+make_timestamp()
+
+# Mass rename dataframe column names to something more sensible
+# that you can pile on you own standards after
+
+cursed_names <-
+  dplyr::tibble(
+    COLUMN1 = 1:10,
+    CoLuMn2 = 1:10,
+    `Column    3` = 1:10,
+    `    ColumN   4    ` = 1:10
+  )
+
+colnames(cursed_names)
+
+cursed_names |>
+  rename_with_stringr() |>
+  colnames()
+
+cursed_names |>
+  rename_with_stringr() |>
+  dplyr::rename_with(
+    .fn = \(col) {
+      stringr::str_remove_all(col, " ")
+    }
+  ) |>
+  colnames()
+
+```
