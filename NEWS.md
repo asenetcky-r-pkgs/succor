@@ -1,3 +1,9 @@
+# succor 0.6.0
+
+## Features
+
+- Added time helpers
+
 # succor 0.5.0
 
 ## Features
