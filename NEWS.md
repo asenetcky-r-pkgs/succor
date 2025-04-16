@@ -1,3 +1,18 @@
+# succor 0.9.0
+
+## Features
+
+- Added GHA: PR Commands
+- Added GHA: pkgdown
+- Added GHA: standard check
+
+# succor 0.8.0
+
+## Features
+
+- Added doco
+- Updated Readme
+
 # succor 0.7.0
 
 ## Features

@@ -1,6 +1,6 @@
 Package: succor
 Title: Common Solutions for Common Usecases
-Version: 0.7.0
+Version: 0.9.0
 Authors@R: 
     person("Alexander", "Senetcky", , "alexander.senetcky@ct.gov", 
            role = c("aut", "cre", "cph"),
@@ -23,3 +23,4 @@ Depends:
 Suggests: 
     remotes (>= 2.5.0)
 Config/testthat/edition: 3
+URL: https://asenetcky-r-pkgs.github.io/succor/
