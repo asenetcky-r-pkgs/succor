@@ -1,3 +1,15 @@
+#' Read all files with specified extension in a folder
+#'
+#' @param path A folder path.
+#' @param ext A file extension.
+#'
+#' @returns A list of tibbles.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#'   read_all_ext("~/data/", "csv")
+#' }
 read_all_ext <- function(path, ext) {
   # check if folder and extension is string
   checkmate::assert(
@@ -28,6 +40,12 @@ read_all_ext <- function(path, ext) {
   output
 }
 
+#' Read a file based on its extension
+#'
+#' @param path A file path.
+#'
+#' @inheritParams read_all_ext
+#' @returns A tibble.
 read_common_file <- function(path, ext) {
   switch(
     ext,

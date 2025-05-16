@@ -13,12 +13,12 @@ rename_with_stringr(.data)
 A Dataframe with the modified variable names.
 }
 \description{
-All variables in a dataframe (in memory, or lazily evaluated)
-will have the following applied:
+All variable names in a dataframe will be standardized.
+The following is applied:
 \itemize{
-\item set to lowercase
-\item whitespace at the end and beginning removed
-\item whitespace inside of a string set to a single space
+\item set to lowercase.
+\item whitespace at the end and beginning removed.
+\item whitespace inside of a string set to a single space.
 }
 }
 \examples{
