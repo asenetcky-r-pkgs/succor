@@ -8,7 +8,7 @@
 [![R-CMD-check](https://github.com/asenetcky-r-pkgs/succor/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/asenetcky-r-pkgs/succor/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of succor is to …
+The goal of succor is to provide helper functions for common scenarios.
 
 ## Installation
 
@@ -57,15 +57,14 @@ library(testthat)
 #>     is_null
 # is the current session on a linux machine?
 is_linux()
-#> [1] TRUE
+#> [1] FALSE
 
 # this is useful for unit testing
 testthat::test_that("test runs when on linux", {
   skip_if_not_linux()
   testthat::expect_true(TRUE)
 })
-#> ── Skip: test runs when on linux ───────────────────────────────────────────────
-#> Reason: This test is only for linux.
+#> Test passed 😸
 ```
 
 ## Miscellaneous Helpers
@@ -75,15 +74,15 @@ library(stringr)
 
 # make a datekey for dimension wrangling
 Sys.Date()
-#> [1] "2025-04-15"
+#> [1] "2025-05-16"
 
 make_datekey(Sys.Date())
-#> [1] 20250415
+#> [1] 20250516
 
 # Standardized timestamps
 # Always the same format, length and delimiters
 make_timestamp()
-#> [1] "2025-04-15 20:46:09.0419"
+#> [1] "2025-05-16 14:13:39.1487"
 
 # Mass rename dataframe column names to something more sensible
 # that you can pile on you own standards after

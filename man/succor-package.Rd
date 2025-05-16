@@ -16,7 +16,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Alexander Senetcky \email{alexander.senetcky@ct.gov} (\href{https://orcid.org/0009-0009-3730-5397}{ORCID}) [copyright holder]
+\strong{Maintainer}: Alexander Senetcky \email{me@asenetcky.dev} (\href{https://orcid.org/0009-0009-3730-5397}{ORCID}) [copyright holder]
 
 }
 \keyword{internal}

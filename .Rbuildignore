@@ -1,4 +1,6 @@
-^helpers\.Rproj$
+^renv$
+^renv\.lock$
+^succor\.Rproj$
 ^\.Rproj\.user$
 ^README\.Rmd$
 ^LICENSE\.md$

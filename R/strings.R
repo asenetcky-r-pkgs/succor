@@ -1,10 +1,11 @@
 #' Squish and lowercase all variables in a dataframe
 #'
-#' All variables in a dataframe (in memory, or lazily evaluated)
-#' will have the following applied:
-#' * set to lowercase
-#' * whitespace at the end and beginning removed
-#' * whitespace inside of a string set to a single space
+#' @description
+#' All variable names in a dataframe will be standardized.
+#' The following is applied:
+#' * set to lowercase.
+#' * whitespace at the end and beginning removed.
+#' * whitespace inside of a string set to a single space.
 #'
 #' @inheritParams assert_dataframe_with_data
 #'
