@@ -1,3 +1,10 @@
+# succor 0.10.0
+
+## Features
+
+- Added io function: `read_all_ext` for reading all 
+files of a desired type in a folder in a folder
+
 # succor 0.9.0
 
 ## Features
