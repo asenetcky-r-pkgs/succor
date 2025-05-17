@@ -3,6 +3,8 @@
 #' @param path A folder path.
 #' @param ext A file extension.
 #'
+#' @family io
+#'
 #' @returns A list of tibbles.
 #' @export
 #'
@@ -39,6 +41,36 @@ read_all_ext <- function(path, ext) {
 
   output
 }
+
+#' Read all files in a folder and hope for the best
+#'
+#' @param path A folder path.
+#'
+#' @returns A list of tibbles.
+#' @export
+#'
+#' @family io
+#'
+#' @examples
+#' \dontrun{
+#'   read_common_folder("~/data/", "csv")
+#' }
+read_folder <- function(path) {
+  file_paths <- NULL
+  # check if folder and extension is string
+  checkmate::assert_directory_exists(path)
+
+  dir <-
+    tibble::tibble(file_paths = fs::dir_ls(path = path)) |>
+    dplyr::mutate(file_type = fs::path_ext(file_paths))
+
+  purrr::map2(
+    dir$file_paths,
+    dir$file_type,
+    \(path, ext) read_common_file(path, ext)
+  )
+}
+
 
 #' Read a file based on its extension
 #'

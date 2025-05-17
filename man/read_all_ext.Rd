@@ -22,3 +22,8 @@ Read all files with specified extension in a folder
   read_all_ext("~/data/", "csv")
 }
 }
+\seealso{
+Other io: 
+\code{\link{read_folder}()}
+}
+\concept{io}
